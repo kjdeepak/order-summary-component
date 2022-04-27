@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
+
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main class="container">
+    <div class="card">
+      <img class="card__header-image" src="./images/illustration-hero.svg" alt="hero illustration">
+      <div class="card_body">
+        <h1 class="card_heading">Order Summary</h1>
 
-  Order Summary
+        <p class="card_description">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <div class="card__tile">
+          <img src="./images/icon-music.svg" alt="music icon">
+          <div class="card__tile__text-container">
+            <h4 class="tile_header">Annual Plan</h4>
+            <p class="tile-description">$59.99/year</p>
+          </div>
 
-  Annual Plan
-  $59.99/year
+          <a class="tile__button">Change</a>
+        </div>
+        <div class="card__button-container">
+          <button class="payment-button">Proceed to Payment</button>
+          <button class="cancel-button">Cancel Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/kjdeepak" target="_blank">kjdeepak4work@gmail.com</a>.
+    </div>
+  </main>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>

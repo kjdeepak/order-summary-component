@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./images/pattern-background-mobile.svg) hsl(225, 100%, 94%) no-repeat;
+    background-size: cover;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    margin: auto;
+    text-align: center;
+    width: 375px;
+}
+
+.card>.card__header-image {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.card>.card_body {
+    padding: 32px 24px;
+}
+
+.card>.card_body>.card__tile {
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+}
+
+.card>.card_body>.card_heading,
+.card>.card_body>.card_description {
+    margin-bottom: 18px;
+}
+
+.card>.card_body>.card__tile {
+    margin-bottom: 28px;
+}
+
+.card>.card_body>.card_heading {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.card>.card_body>.card_description {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.card>.card_body>.card__tile>.card__tile__text-container {
+    margin-left: 16px;
+    text-align: start;
+}
+
+.card>.card_body>.card__tile>.tile__button {
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: auto;
+    text-decoration: underline;
+}
+
+.card>.card_body>.card__tile>.tile__button:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.card__tile__text-container>.tile-header {
+    font-weight: 700;
+}
+
+.card__tile__text-container>.tile-description {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card__button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-button,
+.cancel-button {
+    background: none;
+    border: none;
+    border-radius: 8px;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    outline: inherit;
+    padding: 16px;
+    font-weight: 700;
+}
+
+.payment-button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin-bottom: 24px;
+    box-shadow: 0px 15px 10px hsl(225deg, 100%, 94%);
+}
+
+.payment-button:hover {
+    opacity: 0.5;
+}
+
+.cancel-button {
+    color: hsl(224, 23%, 55%);
+    display: contents;
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        background: url(./images/pattern-background-desktop.svg) hsl(225, 100%, 94%) no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        right: auto;
+    }
+}
