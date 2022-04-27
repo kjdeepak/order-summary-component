@@ -90,6 +90,7 @@ body {
 }
 
 .card__tile__text-container>.tile-header {
+    font-size: 16px;
     font-weight: 700;
 }
 
